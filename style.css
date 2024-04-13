@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: #eee;
+    font-family: "Gabarito", sans-serif;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    z-index: 100;
+}
+
+.banner{
+    background-image: url(leaves_drops_dew_129757_1366x768.jpg);
+    height: 100vh;
+    width: 100%;
+    margin-top: -70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner::after{
+    content: '';
+    position: absolute;
+    inset: 0 0 0 0;
+    background-image: url(61Kk3YS-removebg.png);
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.banner .content{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.banner .content div:nth-child(1){
+    font-size: 3em;
+}
+.banner .content div:nth-child(2){
+    font-size: 20em;
+    font-weight: bold;
+    color: #dae2db;
+}
+.banner .content div:nth-child(3){
+    text-align: center;
+}
+
+
+.banner .content button{
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee7;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+
+@media  screen and (max-width : 1200px) {
+    .banner .content{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width :992px){
+    .banner .content{
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 678px){
+    .banner .content{
+        font-size: 4px;
+    }
+}
